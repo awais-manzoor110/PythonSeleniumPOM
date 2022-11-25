@@ -6,7 +6,7 @@ class Confirm:
         self.driver = driver
 
     search_countries = (By.ID, "country")
-    selected = (By.LINK_TEXT, "India")
+    selected = (By.LINK_TEXT, "Pakistan")
     checkbox = (By.XPATH, "//div[@class='checkbox checkbox-primary']")
     submit = (By.CSS_SELECTOR, "[type='submit']")
     message = (By.CLASS_NAME, "alert-success")

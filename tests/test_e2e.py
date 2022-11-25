@@ -19,8 +19,8 @@ class Testone(BaseClass):
         checkout_page.button_click().click()
         # Next page variable initialization
         search = checkout_page.success()
-        search.search_country().send_keys("ind")
-        self.verify_link_presence("India")
+        search.search_country().send_keys("pak")
+        self.verify_link_presence("Pakistan")
         search.selected_country().click()
         search.checkbox_check().click()
         search.submit_check().click()
