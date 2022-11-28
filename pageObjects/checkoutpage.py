@@ -7,8 +7,8 @@ class Checkout:
     def __init__(self, driver):
         self.driver = driver
 
-    products = (By.XPATH, "//div[@class='card h-100']")
-    selected_product = (By.XPATH, "div/button")
+    products = (By.XPATH, "//div[@class='card h-100']/div/h4/a")
+    selected_product = (By.CSS_SELECTOR, ".card-footer button")
     btn = (By.CSS_SELECTOR, "a[class*='btn-primary']")
     success_btn = (By.XPATH, "//button[@class='btn btn-success']")
 

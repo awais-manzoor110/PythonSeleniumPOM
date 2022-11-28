@@ -10,12 +10,10 @@ class Testone(BaseClass):
         # Next page variable initialization
         checkout_page = homepage.shop_items()
         products = checkout_page.select_products()
-
         for product in products:
             product_name = product.text
-            if product_name == "Blackberry":
+            if product_name == "Nokia Edge":
                 checkout_page.selected_one().click()
-
         checkout_page.button_click().click()
         # Next page variable initialization
         search = checkout_page.success()
